@@ -8,7 +8,7 @@ using API.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace API.Servkces
+namespace API.Services
 {
     public class TokenService : ITokenService
     {
