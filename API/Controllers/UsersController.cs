@@ -29,7 +29,7 @@ namespace API.Controllers
             return Ok(_mapper.Map<IEnumerable<MemberDto>>(await _userRepository.GetMembersAsync()));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             return _mapper.Map<MemberDto>(await _userRepository.GetMemberAsync(username));
